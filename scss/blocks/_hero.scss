@@ -1,0 +1,95 @@
+// hero start
+
+.hero__wrapper {
+    text-align: center;
+    padding-top: 154px;
+}
+
+.hero__title {    
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    margin-bottom: 16px;
+    color: #07484a;
+    margin-top: 0;
+}
+
+.hero__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 52px;
+    color: #07484a;
+}
+
+.header__button {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 16px 40px;
+    background-color: #70908b;
+    color: #fdfbf8;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.header__button:hover {
+    background-color:#07484a;
+}
+
+
+@include mobile-first (808px){
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    .hero__wrapper {
+        max-width: 540px;
+        width: 100%;
+        padding-top: 114px;
+        text-align: start;
+    }
+    
+    .hero__title {
+        font-size: 48px;
+        line-height: 62px;
+    }
+    
+    .hero__text {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    
+    .header__button {
+        font-size: 24px;
+        line-height: 33px;
+        padding: 24px 55px;
+    }
+    
+}
+
+@include mobile-first(1104px) {
+    
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@include mobile-first (2000px) {
+    
+    .hero__wrapper {
+        max-width: 668px;
+        padding-top: 272px;
+    }
+    
+    .hero__title {
+        font-size: 64px;
+        line-height: 85px;
+        margin-bottom: 54px;
+    }
+}

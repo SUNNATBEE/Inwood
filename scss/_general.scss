@@ -1,0 +1,39 @@
+//  GENERAL 
+
+*{
+    box-sizing: border-box;
+  }
+  
+  *::before,
+  *::after{
+    box-sizing: inherit;
+  }
+  
+  ::selection{
+    background-color: darkcyan;
+    color: gold;
+  }
+  
+  html{
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  img{
+    display: block;
+    height: auto;
+  }
+  
+  body{
+   @include sticky-footer;
+    font-family: "Open Sans", "Arial", sans-serif; 
+    overflow-x: hidden;    
+  }
+  
+  // STICKY-FOOTER 
+  .site-main{
+    @include sticky-footer;
+    flex-grow: 1;
+  }
+  

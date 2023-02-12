@@ -1,0 +1,146 @@
+// Modal start
+.modal__box {
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    position: absolute;
+    top: 70px;
+    z-index: 99;
+    max-width: 966px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 40px 40px;
+    background-color: #fff;
+    border-radius: 40px;
+    transform: translateY(-150%);
+    transition: 1s;
+}
+
+.modal-js {
+    transform: translateY(0);
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__burger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.modal__login {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    margin: 0;
+}
+
+.modal__login-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    background-color: #f5f5f5;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.modal__close {
+    background-image: url("../../images/close-burger.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 14px;
+    height: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.form__input {
+    max-width: 886px;
+    width: 100%;
+    border: none;
+    margin-bottom: 35px;
+    padding: 41px 0;
+    padding-left: 128px;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000;
+}
+
+.label__name {
+    position: relative;
+    &::before {
+        position: absolute;
+        top: 33px;
+        left: 68px;
+        background-image: url("../../images/modal-username.svg");
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 30px;
+        content: "";
+    }
+}
+
+.label__password {
+    position: relative;
+    &::before {
+        position: absolute;
+        top: 33px;
+        left: 68px;
+        background-image: url("../../images/modal-lock.svg");
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 30px;
+        content: "";
+    }
+}
+
+.modal__button {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 40px 0;
+    background-color:  #70908b;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:  rgba(255, 255, 255, 0.5);
+    transform: translateY(-150%);
+    transition: 0.7s;
+}
+
+.overlay-js {
+    transform: translateY(0);
+}
+
+@include mobile-first(2000px){
+
+    .modal {
+        top: 220px;
+    }
+
+}

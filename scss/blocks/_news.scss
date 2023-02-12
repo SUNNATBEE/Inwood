@@ -1,0 +1,110 @@
+.news__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.news__bg-img {
+    max-width: 1200px;
+    width: 100%;
+}
+.news__textbox {
+    max-width: 553px;
+    width: 100%;
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.news__bg-wrapper{
+    background-color:#e0f6f1;;
+    width: 100%;
+}
+.news__title {
+    font-family: "Playfair Display", "Times New Roman" , serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+    letter-spacing: 0.05em;
+    color: #07484a;
+    margin-bottom: 25px;
+}
+.news__text{
+    font-family: "Roboto" , "Arial" , sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #07484a;
+    margin-bottom: 57px;
+}
+
+.news__input {
+    max-width: 553px;
+    width: 100%;
+    border: none;
+    background-color: inherit;
+    outline: none;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 41px;
+    padding-bottom: 16px;
+    padding-left: 89px;
+}
+.news__btn {
+    font-family: "Roboto", "Arial" , sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fdfbf8;
+    border: none;
+    background-color: #70908b;
+    border-radius: 6px;
+    padding: 20px 71.5px;
+}
+.news__btn:hover{
+    transition: 0.4s ease;
+    background-color:#07484a;
+}
+@include mobile-first(600px){
+    .news__textbox{
+        margin: 0 auto;
+        
+    }
+    .news__input{
+        padding-left: 20px;
+    }
+}
+@include mobile-first(808px){
+    .news__textbox{
+        margin: 0;
+        padding-top: 109px;
+        padding-bottom: 109px;
+        text-align: start;
+    }
+    .news__title{
+        max-width: 350px;
+        font-size: 48px;
+        line-height: 62px;
+        margin-bottom: 25px;
+    }
+}
+@include mobile-first(1104px){
+    .news__wrapper{
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .news__bg-img{
+        width: 50%;
+        height:632px;
+    }
+    .news__bg-wrapper{
+        padding-left: 40px;
+        align-items: stretch;
+    }
+}
+@include mobile-first(2000px){
+    .news__bg-img{
+        width: 100%;
+    }
+    .news__bg-wrapper{
+        padding-left: 150px;
+    }
+}

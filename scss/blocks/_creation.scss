@@ -1,0 +1,157 @@
+// Creation start
+
+.creation__list {
+    @include list-unstyle;
+    margin-top: 0;  
+    padding: 20px 0;
+    overflow-x: hidden;
+}
+
+.creation__item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.creation__img {
+    max-width: 288px;
+    width: 100%;
+    height: 311px;
+}
+
+.creation__info {
+    position: relative;
+    z-index: 10;
+    font-family: 'Playfair Display';
+    padding: 30px 0 25px 16px;
+    background-color: #70908b;
+}
+
+.creation__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 32px;
+    color: #fff;
+}
+
+.creation__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 34px;
+    color: #fdfbf8;
+}
+
+.creation__more-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 17px;
+    color: #fdfbf8;
+    margin: 0 16px 0 0;
+}
+
+.creation__more {
+    display: flex;  
+    align-items: center;
+}
+
+.creation__more-line {
+    position: relative;
+    top: 2px;
+    width: 27px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.creation__line-span {
+    position: absolute;
+    top: 1.5px;
+    z-index: -1;
+    width: 87px;
+    height: 2px;
+    background-color: #07484a;
+}
+
+
+@include mobile-first(808px) {
+    
+    .creation__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .creation__list {
+        max-width: 500px;
+    }
+    
+    .creation__info {
+        width: 400px;
+        height: 503px;
+        padding: 130px 20px;
+        border-radius: 0px 16px 16px 0px;
+        margin-right: 32px;
+    }
+    
+    .creation__img  {
+        height: 532px;
+    }
+    
+    .creation__text {
+        font-size: 24px;
+        line-height: 23px;
+    }
+    
+}
+
+@include mobile-first (1000px){
+    .creation__list {
+        max-width: 700px;
+    }
+
+}
+
+@include mobile-first (1150px){
+    .creation__list {
+        max-width: 800px;
+    }
+
+}
+
+@include mobile-first (1250px){
+    .creation__list {
+        max-width: 900px;
+    }
+
+}
+
+@include mobile-first (1350px){
+    .creation__list {
+        max-width: 1000px;
+    }
+
+}
+
+@include mobile-first (1450px){
+    .creation__list {
+        max-width: 1100px;
+    }
+
+}
+
+@include mobile-first (1550px){
+    .creation__list {
+        max-width: 1200px;
+    }
+
+}
+
+@include mobile-first(2000px) {
+
+    .creation__info  {
+        width: 577px;
+        padding: 130px 100px 140px 150px;
+    }
+
+}
